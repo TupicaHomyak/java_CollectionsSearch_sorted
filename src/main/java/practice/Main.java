@@ -21,28 +21,32 @@ public class Main {
         boolean bruteForceResult = CoolNumbers.bruteForceSearchInList(coolNumbersList, numberToFind);
         endTime = System.nanoTime();
         duration = endTime - startTime;
-        System.out.println("Поиск перебором: номер " + (bruteForceResult ? "найден" : "не найден") + ", поиск занял " + duration + "нс");
+        System.out.println("Поиск перебором: номер " + (bruteForceResult ? "найден" : "не найден")
+                                                     + ", поиск занял " + duration + "нс");
 
         // Бинарный поиск
         startTime = System.nanoTime();
         boolean binarySearchResult = CoolNumbers.binarySearchInList(sortedCoolNumbersList, numberToFind);
         endTime = System.nanoTime();
         duration = endTime - startTime;
-        System.out.println("Бинарный поиск: номер " + (binarySearchResult ? "найден" : "не найден") + ", поиск занял " + duration + "нс");
+        System.out.println("Бинарный поиск: номер " + (binarySearchResult ? "найден" : "не найден")
+                                                    + ", поиск занял " + duration + "нс");
 
         // Поиск в HashSet
         startTime = System.nanoTime();
         boolean hashSetSearchResult = CoolNumbers.searchInHashSet(coolNumbersHashSet, numberToFind);
         endTime = System.nanoTime();
         duration = endTime - startTime;
-        System.out.println("Поиск в HashSet: номер " + (hashSetSearchResult ? "найден" : "не найден") + ", поиск занял " + duration + "нс");
+        System.out.println("Поиск в HashSet: номер " + (hashSetSearchResult ? "найден" : "не найден")
+                                                     + ", поиск занял " + duration + "нс");
 
         // Поиск в TreeSet
         startTime = System.nanoTime();
         boolean treeSetSearchResult = CoolNumbers.searchInTreeSet(coolNumbersTreeSet, numberToFind);
         endTime = System.nanoTime();
         duration = endTime - startTime;
-        System.out.println("Поиск в TreeSet: номер " + (treeSetSearchResult ? "найден" : "не найден") + ", поиск занял " + duration + "нс");
+        System.out.println("Поиск в TreeSet: номер " + (treeSetSearchResult ? "найден" : "не найден")
+                                                     + ", поиск занял " + duration + "нс");
     }
 
 }
